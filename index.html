@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOICA</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle&family=Jua&family=Just+Another+Hand&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nanum+Pen+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <div id="popup">
+
+    </div>
+  <header>
+      <!-- 
+          cms처럼 작업하되 스크롤 내리면 터닝포인트 같은 효과 주기
+          (일반 바처럼 표현하기)
+        -->
+      <div>
+        <h1><img src="img/logo/logo.png" alt="KOICA"></h1>
+        <div id="nav_bg">
+          <nav id="gnb">
+            <ul class="depth_01">
+              <li><a href="https://www.koica.go.kr/koica_kr/851/subview.do">소개</a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/900/subview.do">주요사업</a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/984/subview.do">국민참여 · 일자리</a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/894/subview.do#intro">ODA</a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/1007/subview.do#intro">소식</a></li>
+            </ul>
+            <div class="depth_02">
+              <div>
+                <ul class="sub">
+                  <li><a href="https://www.koica.go.kr/koica_kr/851/subview.do">KOICA</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/7912/subview.do">인권경경</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8329/subview.do">ESG 경영</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/877/subview.do">윤리준법경영</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/1009/subview.do">고객만족경영</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8227/subview.do">안전경영</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/869/subview.do">경영공시</a></li>
+                </ul>
+                <ul class="sub">
+                  <li><a href="https://www.koica.go.kr/koica_kr/8131/subview.do">사업전략 및 정책</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/900/subview.do">추진방향</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/901/subview.do">추진실적</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/902/subview.do#intro">분야별 지원현황</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/933/subview.do#intro">지역별현황</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/938/subview.do#intro">형태별 지원현황</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/976/subview.do">사업평가</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8146/subview.do">ABC프로그램 추진 실적</a></li>
+                </ul>
+                <ul class="sub">
+                  <li><a href="https://www.koica.go.kr/koica_kr/982/subview.do">기관공모</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/983/subview.do">입찰정보</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/984/subview.do">개발협력 좋은 일자리</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/985/subview.do">행사</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/986/subview.do">교육 및 자격시험</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/987/subview.do">유관기관공지</a></li>
+                </ul>
+                <ul class="sub">
+                  <li><a href="https://www.oda.go.kr/opo/nmasc/main.do" target="_blank">KOICA 오픈데이터포털</a></li>
+                  <li><a href="https://lib.koica.go.kr/" target="_blank">ODA 도서관</a></li>
+                  <li><a href="https://oda.go.kr/opo/ndaro/opoNdaroOfWoBeList.do" target="_blank">국제개발협력 용어집</a></li>
+                  <li><a href="https://oda.go.kr/opo/ndaro/opoNdaroOfWoBeList.do">지식서비스</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8065/subview.do">개발협력동향</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8136/subview.do">연구보고서</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8367/subview.do">ODA연구 알리미</a></li>
+                </ul>
+                <ul class="sub">
+                  <li><a href="https://www.koica.go.kr/koica_kr/1019/subview.do">고객의 소리</a></li>
+                  <li><a href="https://koica.go.kr/sengoda/main.do" target="_blank">국민제안방<br>(생각이 오다)</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8057/subview.do">기업성장응답센터</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8321/subview.do">고객신고</a></li>
+                  <li><a href="https://booking.naver.com/booking/12/bizes/383742" target="_blank">KOICA 견학 및 방문</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/1051/subview.do">KOICA 편의시설 이용신청</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/1058/subview.do">제증명서 발급센터</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/7393/subview.do">설문조사</a></li>
+                  <li><a href="https://www.koica.go.kr/koica_kr/8508/subview.do">글로벌 ODA 기업<br>진출센터<br>(KODABIZ)</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div id="nav_sub"></div>
+      </div>
+  </header>
+
+  <aside id="right_fixed">
+    <a href="#right_fixed" class="menu_btn" title="전체메뉴보기">
+      <i></i><i></i><i></i>
+    </a>
+    <div class="inner">
+      <div id="lang">
+        <h2 class="hidden">Language</h2>
+        <ul>
+          <li title="Korean" class="active">KOR</li>
+          <li title="English">ENG</li>
+        </ul>
+      </div>
+      <div id="login">
+        <h2 class="hidden">login</h2>
+        <ul>
+          <li class="login_01">
+            <a href="https://www.koica.go.kr/koica_kr/1668/subview..do"><p>전체메뉴<br>바로가기</p></a>
+          </li>
+          <li class="login_02">
+            <a href="https://iuser.koica.go.kr/user/loginView.do"><p>로그인</p></a>
+          </li>
+          <li class="login_03">
+            <a href="https://iuser.koica.go.kr/join/agreeView.do"><p>회원가입</p></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <aside id="fix_top">
+    <a href="#top"><img src="img/use/top.png" alt="처음으로"></a>
+  </aside>
+
+  <main>
+    <!-- ☀️main -->
+    <div class="back_main clearfix">
+      <section id="main_view" class="swiper">
+        <h2 class="hidden">main view</h2>
+        <ul class="slider_01">
+          <li class="view_01 img_01">
+            <div class="txt">
+              <h3>포용과 상생의 개발협력으로<br><span>인류 공영과 세계평화 증진</span>에 기여</h3>
+              <p>Korea International Cooperation Agency</p>
+            </div>
+          </li>
+          <li class="view_01 img_02">
+            <div class="txt">
+              <h3>보편적 가치와 상생의 국익을 추구하는<br><span>대한민국 글로벌 개발 협력기관</span></h3>
+              <p>Korea International Cooperation Agency</p>
+            </div>
+          </li>
+          <li class="view_01 img_03">
+            <div class="txt">
+              <h3>여성·아동·장애인의<br>인권 향상 및 성 평등 실현<br><span>지속가능한 발전 및 인도주의 실현</span></h3>
+              <p>Korea International Cooperation Agency</p>
+            </div>
+          </li>
+        </ul>
+        <div class="pagination"></div>
+      </section>
+      <section id="main_view_sub">
+        <div id="search" class="box01">
+          <h2 class="hidden">search</h2>
+          <div>
+            <input type="text" placeholder="검색어를 입력해주세요">
+            <img src="./img/use/search_1.png" alt="찾기" title="찾기">
+          </div>
+        </div>
+        <!-- #search -->
+        <div id="quick_menu" class="box01">
+          <ul class="q_ul_01">
+            <li class="q_01"><a href="https://www.koica.go.kr/koica_kr/983/subview.do"><p>입찰정보</p></a></li>
+            <li class="q_02"><a href="https://www.koica.go.kr/koica_kr/982/subview.do"><p>기관공모</p></a></li>
+            <li class="q_03"><a href="https://www.koica.go.kr/koica_kr/986/subview.do"><p>교육/자격시험</p></a></li>
+          </ul>
+          <ul class="q_ul_02">
+            <li class="q_04"><a href="https://www.koica.go.kr/koica_kr/984/subview.do"><p>국민참여·일자리</p></a></li>
+            <li class="q_05"><a href="https://www.oda.go.kr/opo/nmasc/main.do" target="_blank"><p>ODA</p></a></li>
+            <li class="q_06"><a href="https://www.koica.go.kr/koica_kr/1019/subview.do"><p>고객센터</p></a></li>
+          </ul>
+        </div>
+        <!-- #quick_menu -->
+        <div id="notice" class="box01">
+          <h2><a href="https://www.koica.go.kr/koica_kr/989/subview.do">공지사항</a></h2>
+          <div class="swiper">
+            <ul class="slider_02">
+              <li class="view_02">
+                <a href="https://www.koica.go.kr/koica_kr/989/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYxNTAlMkYzODY5NTYlMkZhcnRjbFZpZXcuZG8lM0Y%3D">
+                  <h3>[내부규정 입안예고] 「ODA연구·교육원 관련 내규」개정(안) 3건 입안예고</h3>
+                  <p>ODA연구·교육원 관련 내규 3건을 일부 개정함에 있어 국민에게 미리 알려 의견을 듣고자 주요내용을 내규작성 및 관리업무지침 제8조에 의하여 다음과 같이 공고합니다.</p>
+                </a>
+              </li>
+              <li class="view_02">
+                <a href="https://www.koica.go.kr/koica_kr/989/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYxNTAlMkYzODY5NDclMkZhcnRjbFZpZXcuZG8lM0Y%3D">
+                  <h3>[내부규정 입안예고] 「글로벌인재양성사업 관련 규정」개정(안) 12건 입안예고</h3>
+                  <p>글로벌인재양성사업 관련 규정 12건을 일부 개정함에 있어 국민에게 미리 알려 의견 을 듣고자 주요내용을 내규작성 및 관리업무지침 제8조에 의하여 다음과 같이 공고합니다.</p>
+                </a>
+              </li>
+              <li class="view_02">
+                <a href="https://www.koica.go.kr/koica_kr/989/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYxNTAlMkYzODY5MjQlMkZhcnRjbFZpZXcuZG8lM0Y%3D">
+                  <h3>[내부규정 입안예고] 보안 업무처리 지침 개정(안) 입법예고</h3>
+                  <p>[내부규정 입안예고문] 한국국제협력단은 ‘보안 업무처리 지침’을 개정함에 있어 해당 주요 내용을 국민에게 미리 알려 의견을 듣고자 협력단 내규작성 및 관리업무지침 제9조에 의하여 다음과 같이 공고합니다.</p>
+                </a>
+              </li>
+              <li class="view_02">
+                <a href="https://www.koica.go.kr/koica_kr/989/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYxNTAlMkYzODY5MjMlMkZhcnRjbFZpZXcuZG8lM0Y%3D">
+                  <h3>[내부규정 입안예고] 「공공데이터 관리 지침」개정(안) 입안 예고</h3>
+                  <p>「공공데이터 관리 지침」을 일부 개정함에 있어 국민에게 미리 알려 의견을 듣고자 주요 내용을 「내 규작성 및 관리업무지침」 제9조에 따라 다음과 같이 공고합니다.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="next"><img src="img/use/next.png" alt="다음 슬라이드"></div>
+          <div class="more"><a href="https://www.koica.go.kr/koica_kr/989/subview.do"><img src="img/use/more.png" alt="더보기"></a></div>
+          <div class="prev"><img src="img/use/prev.png" alt="이전 슬라이드"></div>
+        </div>
+        <!-- #notice -->
+      </section>
+    </div>
+    <!-- ☀️board, location -->
+    <div id="board-locat">
+      <div class="back_wid">
+        <section id="location">
+          <div>
+            <h2>해외 사무소</h2>
+            <div id="locat_box">
+              <select id="location_depth01" required>
+                <option value="" disabled selected> 지역</option>
+                <option value="1">아시아</option>
+                <option value="2">아프리카</option>
+                <option value="3">중남미</option>
+                <option value="4">중동</option>
+                <option value="5">유라시아</option>
+              </select>
+              <select id="location_depth02" required>
+                <option value="" disabled selected>세부지역을 선택해주세요</option>
+                <option value="1">네팔</option>
+                <option value="2">동티모르</option>
+                <option value="3">라오스</option>
+                <option value="4">미얀마</option>
+                <option value="5">방글라데시</option>
+                <option value="6">베트남</option>
+                <option value="7">스리랑카</option>
+                <option value="8">아프가니스탄</option>
+                <option value="9">인도</option>
+                <option value="10">인도네시아</option>
+                <option value="11">캄보디아</option>
+                <option value="12">파키스탄</option>
+                <option value="13">피지</option>
+                <option value="14">필리핀</option>
+              </select>
+            </div>
+            <button class="btn">바로가기</button>
+          </div>
+        </section>
+        <section id="board">
+          <div id="board_01">
+            <div class="title">
+              <h2>입찰정보</h2>
+              <p><a href="https://www.koica.go.kr/koica_kr/983/subview.do">더보기 +</a></p>
+            </div>
+            <ul>
+              <li><a href="https://nebid.koica.go.kr/oep/bepb/popup/beffatPblancInfoDetail.do?P_BEFFAT_PBLANC_NO=W202400220" target="_blank">
+                <p class="board_text"><span>D-41</span>&nbsp; (입찰공고) 필리핀 경찰청 범죄수사정보 통합관리 시스템 구축 사업 ISMP 수립 및 시스템개발 용역</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="http://nebid.koica.go.kr/oep/prcm/popup/bidWrtancDetail.do?P_PBLANC_NO=P2024-00239&P_PBLANC_ODR=1" target="_blank">
+                <p class="board_text"><span>D-39</span>&nbsp; (입찰공고) 페루 아마존 지역 원헬스 기반 매개체 감염병 대응역량 및 보건의료체계 강화사업 PMC 용역</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="http://nebid.koica.go.kr/oep/prcm/popup/bidWrtancDetail.do?P_PBLANC_NO=P2024-00238&P_PBLANC_ODR=1" target="_blank">
+                <p class="board_text"><span>D-32</span>&nbsp; (입찰공고) 우즈베키스탄 식물검역행정 역량강화 및 식물검역소 개선사업 기자재 공급 PC 용역</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="http://nebid.koica.go.kr/oep/prcm/popup/bidWrtancDetail.do?P_PBLANC_NO=P2024-00232&P_PBLANC_ODR=1" target="_blank">
+                <p class="board_text"><span>D-26</span>&nbsp; (입찰공고) 키르기스스탄 디지털 전환을 위한 국가 정보화 역량 강화 사업 PMC 용역</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="https://nebid.koica.go.kr/oep/bepb/popup/beffatPblancInfoDetail.do?P_BEFFAT_PBLANC_NO=W202400219" target="_blank">
+                <p class="board_text"><span>D-75</span>&nbsp; (장기지속) KOICA 차세대 통합사업관리 시스템(NEXT-IPM)구축 감리용역 </p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="http://nebid.koica.go.kr/oep/prcm/popup/bidWrtancDetail.do?P_PBLANC_NO=P2024-00228&P_PBLANC_ODR=1" target="_blank">
+                <p class="board_text"><span>D-13</span>&nbsp; (입찰공고) 르완다 농산물 가치사슬 스마트화 지원사업 정보화 PC 용역</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+            </ul>
+          </div>
+          <div id="board_02">
+            <div class="title">
+              <h2>기관공모</h2>
+              <p><a href="https://www.koica.go.kr/koica_kr/982/subview.do">더보기 +</a></p>
+            </div>
+            <ul>
+              <li><a href="https://www.koica.go.kr/koica_kr/982/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYyOTElMkYzODY2ODIlMkZhcnRjbFZpZXcuZG8lM0ZwYWdlJTNEMSUyNnNyY2hDb2x1bW4lM0QlMjZzcmNoV3JkJTNEJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2">
+                <p class="board_text"><span class="a">시민사회협력</span>&nbsp;	2025 KOICA 민관협력 인큐베이팅(시민사회 파트너) 참여단체 공모(~11/22)</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/982/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYyOTElMkYzODY2MjglMkZhcnRjbFZpZXcuZG8lM0ZwYWdlJTNEMSUyNnNyY2hDb2x1bW4lM0QlMjZzcmNoV3JkJTNEJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2">
+                <p class="board_text"><span class="b">기타공모</span>&nbsp; 2025-2026년 대학원 국제개발협력 전문가 양성사업 공모 제안서 제출방식 변경 안내(KOPIS → 전자문서시스템)</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/982/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYyOTElMkYzODY2MjclMkZhcnRjbFZpZXcuZG8lM0ZwYWdlJTNEMSUyNnNyY2hDb2x1bW4lM0QlMjZzcmNoV3JkJTNEJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2">
+                <p class="board_text"><span class="b">기타공모</span>&nbsp; 2025년 대학교 국제개발협력 이해증진사업 공모 제안서 제출방식 변경 안내(KOPIS → 전자문서시스템)</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/982/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYyOTElMkYzODY1ODclMkZhcnRjbFZpZXcuZG8lM0ZwYWdlJTNEMSUyNnNyY2hDb2x1bW4lM0QlMjZzcmNoV3JkJTNEJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2">
+                <p class="board_text"><span class="b">기타공모</span>&nbsp; KOICA 울산 국제개발협력센터사업(2차) 재공모</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/982/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYyOTElMkYzODY1ODYlMkZhcnRjbFZpZXcuZG8lM0ZwYWdlJTNEMSUyNnNyY2hDb2x1bW4lM0QlMjZzcmNoV3JkJTNEJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2">
+                <p class="board_text"><span class="c">인도적 지원</span>&nbsp; 2025 인도적지원 민관협력프로그램 HDP-N사업 공모 안내 (12/17 수정)</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+              <li><a href="https://www.koica.go.kr/koica_kr/982/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa29pY2Ffa3IlMkYyOTElMkYzODY0ODglMkZhcnRjbFZpZXcuZG8lM0ZwYWdlJTNEMSUyNnNyY2hDb2x1bW4lM0QlMjZzcmNoV3JkJTNEJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2">
+                <p class="board_text"><span class="c">인도적 지원</span>&nbsp; 2025 KOICA 인도적지원 민관협력프로그램 HDP-N사업 공모설명회</p>
+                <p class="date">2024.12.27</p>
+              </a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- ☀️cs_quick -->
+    <section id="sc_quick" class="back_wid">
+      <h2>cs 바로가기</h2>
+      <ul>
+        <li class="sc_q_01"><a href="https://www.koica.go.kr/koica_kr/7395/subview.do"><p>칭찬: 참(CHARM)<br>KOICA</p></a></li>
+        <li class="sc_q_02"><a href="https://koica.go.kr/sengoda/main.do" target="_blank"><p>국민제안방</p></a></li>
+        <li class="sc_q_03"><a href="https://www.koica.go.kr/koica_kr/1039/subview.do"><p>견학</p></a></li>
+        <li class="sc_q_04"><a href="https://www.koica.go.kr/koica_kr/1058/subview.do"><p>제증명서<br>발급센터</p></a></li>
+        <li class="sc_q_05"><a href="https://www.koica.go.kr/koica_kr/8057/subview.do"><p>기업성장<br>응답센터</p></a></li>
+        <li class="sc_q_06"><a href="https://www.koica.go.kr/koica_kr/8508/subview.do"><p>글로벌 ODA<br>기업진출센터<br>(KODABIZ)</p></a></li>
+      </ul>
+    </section>
+    <!--☀️ ODA -->
+    <section id="ODA">
+      <h2 class="back_wid">ODA<br><sup>(공적개발원조)</sup></h2>
+      <ul class="back_wid">
+        <li class="txt">대한민국 정부와 KOICA는<br>지속가능한 발전 및 인도주의를 실현하고<br>국제사회의 평화와 번영을 도모하기 위해<br>관계 기관과 협력하여 여러 사업을 진행하고 있습니다</li>
+        <li class="btn"><div><a href="https://www.odakorea.go.kr/kor/Main">더 알아보기</a></div></li>
+      </ul>
+      <div class="ODA_bg"><p></p></div>
+    </section>
+    <!-- ☀️magazine, video -->
+    <div id="promotion" class="back_wid">
+      <section id="magazine">
+        <h2>Magazine <span>KOICA</span></h2>
+        <div class="inner">
+          <div class="mag_L">
+            <a href="https://www.koica.go.kr/koica_kr/999/subview.do?enc=Zm5jdDF8QEB8JTJGd2Viem4lMkZrb2ljYV9rciUyRjk0MyUyRndlYnpuQXJ0aWNsVmlldy5kbyUzRmdyb3VwU24lM0QlMjY%3D">
+              <ul>
+                <li class="mag_img"><img src="img/use/magazine.jpg" alt=""></li>
+                <li class="mag_txt">
+                  <h3>한국과 캄보디아 청년이 함께 창업한다면?</h3>
+                  <p>지난 11월 15일 한양대학교에서 열린 2024 한국-캄보디아 ICT 창업 교류 프로그램 성과공유회에서 최종 우승한 크라체(KRATIE) 팀을 비롯한 전체 연수생들이 기념사진을 촬영하고 있다. 한국과 캄보디아는 지리적 위치와 사회문화적 특성은 비슷한 부분도 있지만 기본적으로 크게 다르다. </p>
+                </li>
+              </ul>
+            </a>
+          </div>
+          <div class="mag_R">
+            <a href="https://www.koica.go.kr/koica_kr/999/subview.do?enc=Zm5jdDF8QEB8JTJGd2Viem4lMkZrb2ljYV9rciUyRjk0MyUyRndlYnpuQXJ0aWNsVmlldy5kbyUzRmdyb3VwU24lM0QlMjY%3D">
+              <ul>
+                <li class="mag_img"><img src="img/use/magazine.jpg" alt=""></li>
+                <li class="mag_txt">
+                  <h3>한국과 캄보디아 청년이 함께 창업한다면?</h3>
+                  <p>지난 11월 15일 한양대학교에서 열린 2024 한국-캄보디아 ICT 창업 교류 프로그램 성과공유회에서 최종 우승한 크라체(KRATIE) 팀을 비롯한 전체 연수생들이 기념사진을 촬영하고 있다. 한국과 캄보디아는 지리적 위치와 사회문화적 특성은 비슷한 부분도 있지만 기본적으로 크게 다르다. </p>
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="video">
+        <h2>YouTube</h2>
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/HHeX9EbUodU?si=_LMxT9UdDeje2WGX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      </section>
+    </div>
+  </main>
+  <!-- ☀️Footer -->
+  <footer>
+    <div class="back_wid">
+      <div id="footer_top" class="clearfix">
+        <div class="foot_L">
+          <ul>
+            <li><a href="https://www.koica.go.kr/koica_kr/1095/subview.do">개인정보 처리방침</a></li>
+            <li><a href="https://www.koica.go.kr/koica_kr/1096/subview.do">책임의 한계 및 법적고지</a></li>
+            <li><a href="https://www.koica.go.kr/koica_kr/1097/subview.do#close">이메일주소 무단수집거부</a></li>
+          </ul>
+        </div>
+        <div class="foot_R" >
+          <article id="sns">
+            <ul>
+              <li><a href="#"><img src="img/use/facebook.png" alt="페이스북" title="바로가기"></a></li>
+              <li><a href="#"><img src="img/use/blog.png" alt="블로그" title="바로가기"></a></li>
+              <li><a href="#"><img src="img/use/youtube.png" alt="유튜브" title="바로가기"></a></li>
+              <li><a href="#"><img src="img/use/insta.png" alt="인스타그램" title="바로가기"></a></li>
+            </ul>
+          </article>
+          <div id="family_site">
+            <h2>Family Site</h2>
+            <div id="family_list">
+              <ul>
+                <li><a href="https://job.koica.go.kr/" target="_blank" title="외부사이트로 이동하기">KOICA 개발협력 커리어센터</a></li>
+                <li><a href="https://dak.koica.go.kr/" target="_blank" title="외부사이트로 이동하기">DAK 개발 협력 연대</a></li>
+                <li><a href="http://www.worldfriendskorea.or.kr/" target="_blank" title="외부사이트로 이동하기">월드 프랜즈 코리아</a></li>
+                <li><a href="https://www.kosha.or.kr/kosha/data/activity_C.do" target="_blank" title="외부사이트로 이동하기">산업안전보건공단</a></li>
+                <li><a href="https://koica.go.kr/sites/ciat/index.do" target="_blank" title="외부사이트로 이동하기">CIAT 연수</a></li>
+                <li><a href="https://wfv.koica.go.kr/" target="_blank" title="외부사이트로 이동하기">World Friends Village</a></li>
+                <li><a href="https://www.koica.go.kr/popup/globalVillage.do" target="_blank" title="외부사이트로 이동하기">KOICA 개발협력 전시관</a></li>
+                <li><a href="https://www.odakorea.go.kr/kor/Main" target="_blank" title="외부사이트로 이동하기">ODA 통합 누리집</a></li>
+                <li><a href="https://www.koica.go.kr/sites/cts_kr/index.do" target="_blank" title="외부사이트로 이동하기">Criative Technology Solution</a></li>
+                <li><a href="https://www.ffsb.kr/" target="_blank" title="외부사이트로 이동하기">가족친화지원사업</a></li>
+              </ul>
+            </div><!-- #family_list -->
+          </div><!-- #family_site .foot_R -->
+        </div><!-- .foot_R -->
+      </div><!-- #footer_top -->
+      <div id="fotter_bottom">
+        <div class="foot_L">
+          <h3><a href="#"><img src="img/logo/logo.png" alt="KOICA"></a></h3>
+          <p><b>13449 경기도 성남시 수정구 대왕판교로 825 한국국제협력단사업자</b> <b>등록번호 : 208-82-03816</b> <b>TEL : 1588-0434</b> <b>FAX : 031)740-0260</b></p>
+          <p><b>COPYRIGHT&copy;<span>KOREA</span> INTERNATIONAL COOPERATION AGENCY ALL RIGHTS RESERVED.</b></p>
+          <div class="bottom_notice">
+            <p>본 홈페이지에 게시된 이메일주소 자동수집을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+            <p>본 사이트는 장애인들의 사용 편의성을 위해 "웹접근성지침"을 준수하고 있습니다.</p>
+          </div>
+        </div>
+        <div class="foot_R"></div>
+      </div>
+    </div>
+  </footer>
+
+ <!-- js 연결 --> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/EzenAddClass.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

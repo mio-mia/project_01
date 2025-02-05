@@ -59,49 +59,44 @@ header a {
 }
 header > div {
   width: 100%;
-  height: 6vw;
-  min-height: 80px;
+  height: 120px;
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  background: rgb(255, 255, 255);
   position: relative;
 }
 header h1 {
   height: 100%;
-  min-height: 80px;
-  width: 15vw;
-  min-width: 200px;
-  text-align: center;
-}
-header h1 img {
-  width: 100%;
-  height: auto;
-  margin-top: -15%;
-  overflow: hidden;
+  width: 12%;
+  background: url("../img/logo/logo.png") no-repeat center center;
+  background-size: 110%;
 }
 header #nav_bg {
-  width: 58vw;
-  height: 1.5vw;
-  padding-top: 3vw;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: 0;
   left: 0;
   background: #fff;
 }
 header #gnb {
-  width: 92%;
+  width: 94%;
   height: fit-content;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-left: 4%;
   transition: all 0.4s;
 }
 header #gnb .depth_01 {
   width: 100%;
-  clear: both;
+  height: 80px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   transition: all 0.4s;
 }
 header #gnb .depth_01 li {
@@ -126,22 +121,25 @@ header #gnb:hover > ul > li > a {
   color: #3e3e3e;
 }
 header #gnb:hover .depth_01 ~ .depth_02 {
-  display: flex;
+  visibility: visible;
   opacity: 1;
 }
 header #gnb .depth_02 {
-  display: none;
+  visibility: hidden;
   opacity: 0;
   position: absolute;
-  top: 4.5vw;
-  width: 100%;
+  top: 100px;
+  width: 100vw;
   height: fit-content;
-  padding: 0 50vw 2vw 50vw;
+  padding: 0 10% 20px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fff;
   box-shadow: 0 1px 2px rgba(132, 132, 132, 0.1333333333);
 }
 header #gnb .depth_02 > div {
-  width: 62.64vw;
+  width: 69.6%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -150,7 +148,6 @@ header #gnb .depth_02 > div {
 header #gnb .depth_02 ul {
   width: 16.6666666667%;
   height: 100%;
-  margin-top: 1.5vw;
   display: inline-flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -161,27 +158,28 @@ header #gnb .depth_02 li {
   text-align: center;
   font-weight: 500;
 }
-header #gnb .depth_02 li:hover a {
+header #gnb .depth_02 a {
+  line-height: 1.4;
   padding-bottom: 0.2em;
-  font-size: 1.1em;
+  border-bottom: 2px solid #fff;
+}
+header #gnb .depth_02 li:hover a {
   font-weight: bold;
-  border-bottom: 2px solid var(--main_logo);
   white-space: nowrap;
-  color: var(--main_logo);
+  color: #00428e;
+  border-bottom-color: #00428e;
   transition: all 0.2s;
 }
 header #nav_sub {
-  width: 15vw;
-  height: 6vw;
+  width: 10%;
 }
 
-/* a-side */
 #right_fixed {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;
-  width: 14vh;
+  width: 100px;
   height: fit-content;
   box-sizing: border-box;
 }
@@ -298,25 +296,6 @@ header #nav_sub {
 #right_fixed .inner #login .login_03 a p {
   margin-bottom: -4.4rem;
 }
-#right_fixed .inner #fix_top {
-  width: fit-content;
-  height: fit-content;
-}
-#right_fixed .inner #fix_top a {
-  width: 6.5vh;
-  height: 6.5vh;
-  display: block;
-  position: fixed;
-  bottom: 4vw;
-  right: 2.5vh;
-  background-color: #00428e;
-  border-radius: 50%;
-}
-#right_fixed .inner #fix_top a img {
-  width: 70%;
-  height: 70%;
-  margin: 17% 0 0 15%;
-}
 
 main {
   width: 100%;
@@ -331,9 +310,9 @@ main {
 }
 
 .back_main {
-  height: 75vh;
-  margin-bottom: 10vw;
-  padding-top: 10vw;
+  height: 714px;
+  margin-bottom: 120px;
+  padding-top: 170px;
 }
 .back_main section {
   height: fit-content;
@@ -343,7 +322,7 @@ main {
 }
 .back_main #main_view {
   width: 66%;
-  height: 75vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 0 30px 30px 0;
@@ -436,7 +415,7 @@ main {
   justify-content: space-between;
   flex-direction: column;
   width: 25%;
-  height: 75vh;
+  height: 100%;
   margin-left: 1.5vw !important;
 }
 .back_main #main_view_sub .box01 {
@@ -448,7 +427,7 @@ main {
 }
 .back_main #main_view_sub #search {
   width: 100%;
-  height: 6vh;
+  height: 8%;
   padding: 0.5vh 0;
   border-top: 4px solid #b5d7ff;
   border-bottom: 4px solid #b5d7ff;
@@ -475,9 +454,9 @@ main {
   margin-right: 2%;
 }
 .back_main #main_view_sub #quick_menu {
-  height: 38vh;
+  height: 60%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
@@ -566,7 +545,7 @@ main {
 }
 .back_main #main_view_sub #notice {
   width: 100%;
-  height: 26vh;
+  height: 30%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -582,7 +561,7 @@ main {
 }
 .back_main #main_view_sub #notice .swiper {
   width: 86%;
-  height: 12vh;
+  height: 52%;
   overflow: hidden;
 }
 .back_main #main_view_sub #notice .slider_02 {
@@ -595,7 +574,7 @@ main {
   overflow: hidden;
 }
 .back_main #main_view_sub #notice .slider_02 .view_02 h3 {
-  font-size: 1.08rem;
+  font-size: 1em;
   margin-bottom: 0.7rem;
   white-space: nowrap;
   overflow: hidden;
@@ -604,14 +583,14 @@ main {
 .back_main #main_view_sub #notice .slider_02 .view_02 p {
   display: block;
   width: inherit;
-  font-size: 1.06rem;
+  font-size: 1em;
   line-height: 1.6rem;
   word-break: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   /* 2줄 이상 줄바꿈 */
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .back_main #main_view_sub #notice .btn {
@@ -646,20 +625,20 @@ main {
 
 #board-locat {
   width: 100%;
-  height: 50vh;
-  padding: 5vh 0;
-  margin-bottom: 10vw;
+  height: 500px;
+  margin-bottom: 120px;
   background: rgba(194, 199, 154, 0.0862745098);
   box-sizing: border-box;
 }
 #board-locat .back_wid {
-  margin-bottom: 0 !important;
+  width: 86%;
+  height: 90%;
+  padding: 0 8%;
   justify-content: space-between;
   align-items: center;
 }
 #board-locat #location {
   width: 26%;
-  height: 40vh;
 }
 #board-locat #location > div {
   width: 100%;
@@ -800,7 +779,7 @@ main {
   display: inline-block;
   width: fit-content;
   height: fit-content;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25em 0.5em;
   background-color: rgba(176, 200, 12, 0.5333333333);
   border-radius: 50px;
   font-size: 0.9em;
@@ -811,17 +790,15 @@ main {
   height: fit-content;
   font-size: 0.85em;
   border-radius: 50px;
+  padding: 0.4em 0.5em 0.3em;
 }
 #board-locat #board .content.b span.a {
-  padding: 0.15rem 0.6rem;
   background: #ffd1fd;
 }
 #board-locat #board .content.b span.b {
-  padding: 0.15rem 0.6rem;
   background: #e3cef6;
 }
 #board-locat #board .content.b span.c {
-  padding: 0.15rem 0.6rem;
   background: #cee8f6;
 }
 
